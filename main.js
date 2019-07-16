@@ -17,11 +17,16 @@ clearList()
 
   
   //  Find the input box the user is typing in and put it in a variable.
-const inputBox = 'input';
-  // TODO: Use the variable you saved in the above step to dive deeper into the
+const inputBox = document.querySelector('.input');
+  //  Use the variable you saved in the above step to dive deeper into the
   // object and find the value the user has added there. Make sure it's a
   // number, not a string. Save it to a variable.
 
+console.dir(inputBox)
+
+const inputValue = inputBox.value;
+
+console.log(inputValue)
   /*
     TODO: Print out the Fizzbuzz pattern up to that input.
     Use the pre-defined `printValue` function below to print out each line,
