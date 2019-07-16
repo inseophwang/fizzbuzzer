@@ -28,7 +28,7 @@ const inputValue = inputBox.value;
 
 console.log(inputValue)
   /*
-    TODO: Print out the Fizzbuzz pattern up to that input.
+    Print out the Fizzbuzz pattern up to that input.
     Use the pre-defined `printValue` function below to print out each line,
     giving it the value you want to print.
     
@@ -41,6 +41,20 @@ console.log(inputValue)
     As a stretch goal (wait until you've finished the basic FizzBuzz solution!),
     call `printValueStrong` instead of `printValue` for even-numbered items.
   */
+let counter = 1;
+
+while(counter <= inputValue) {
+  if (counter % 15 === 0) {
+    printValue('FizzBuzz');
+  } else if (counter % 5 === 0) {
+    printValue('Buzz');
+  } else if (counter % 3 === 0) {
+    printValue('Fizz');
+  } else {
+    printValue(counter);
+  }
+  counter = counter + 1;
+}
 
 
   /*
